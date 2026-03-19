@@ -27,7 +27,7 @@ public class FornecedorController {
     }
 
     @GetMapping("/{id}")
-    public Optional<FornecedorModel> buscarPorId(@PathVariable Long id){
+    public Optional<FornecedorModel> buscarFornecedor(@PathVariable Long id){
         return fornecedorService.buscarPorId(id);
     }
 
