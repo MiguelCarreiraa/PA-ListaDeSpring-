@@ -10,8 +10,11 @@ public class BookModel {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(name = "Nome Livro")
     private String titulo;
+    @Column(name = "Nome Autor")
     private String autor;
+    @Column(name = "Ano de Publicacao do Livro")
     private Integer anoPublicacao;
 
     public BookModel() {}
