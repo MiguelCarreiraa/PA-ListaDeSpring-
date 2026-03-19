@@ -22,8 +22,8 @@ public class AutorService {
         return autorRepository.save(autor);
     }
 
-    public AutorModel buscarAutorPorId(Long id){
-        return autorRepository.findById(id).get();
+    public Optional<AutorModel> buscarAutorPorId(Long id){
+        return autorRepository.findById(id);
     }
 
     public AutorModel atualizarAutor(Long id, AutorModel autorModel){
